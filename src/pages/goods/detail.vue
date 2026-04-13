@@ -2,7 +2,6 @@
 import { computed, onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
-import TeamProgress from '../../components/TeamProgress.vue'
 import { DEFAULT_CHANNEL, DEFAULT_SOURCE } from '../../config/constants'
 import { queryGroupBuyMarketConfig, type GoodsDetailDTO } from '../../services/goods'
 import { createPayOrder } from '../../services/order'
