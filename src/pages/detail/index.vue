@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-gray-50 pb-28 font-sans text-gray-900">
 
     <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3 bg-white/80 backdrop-blur-md">
-      <button class="p-1 hover:bg-gray-100 rounded-full transition-colors">
+      <button class="p-1 hover:bg-gray-100 rounded-full transition-colors" @click="router.push('/')">
         <span class="material-symbols-outlined text-gray-800">arrow_back</span>
       </button>
       <h1 class="text-xl font-black italic tracking-tighter text-[#c81e2b]">Sirmem</h1>
@@ -149,6 +149,9 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 // Tabs 状态
 const currentTab = ref('details');
